@@ -1,0 +1,42 @@
+body {
+    border: 1px solid black;
+    width: 90%;
+    margin: 20px auto;
+}
+#content {
+    width:  60%;
+    margin: 0 auto;
+}
+img {
+    width: 120px;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 50px;
+}
+h1 {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 520;
+    text-align: center;
+    margin-top: 50px;
+    letter-spacing: 1px;
+}
+h2 {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 500;
+    font-size: .8em;
+    text-align: center;
+    margin: 0;
+    letter-spacing: 2px;
+    color:dodgerblue
+}
+hr {
+    background-color: lightgray;
+}
+li {
+    margin: 20px;
+    font-size: .9em;
+    margin-left: -10px;
+}
+p {
+    font-size: .9em;
+}
