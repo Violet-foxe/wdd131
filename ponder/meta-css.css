@@ -37,3 +37,8 @@ img {
 .list {
     list-style-type: none;
 }
+.new-list {
+    list-style-type: disc;
+    color: purple;
+    border-radius: 20px;
+}
