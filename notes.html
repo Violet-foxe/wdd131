@@ -41,9 +41,36 @@
         // java can go out and grab one of the elements, and pulls it 
         // into the java to manipulate it
 
+        // query selector stuff
+
+        //find things with a class name
+        let type1 = document.querySelector(".list"); // use ".thing" with query selectors
+        type1.style.backgroundColor = "cornsilk";
+        
+        //find things with an id name (can you do this with a query selector instead?)
+        let type2 = document.getElementById("type2"); //don't use "#thing", use "thing"
+        type2.style.color = "gray";
+
+        let head1 = document.querySelector("#head1");
+        head1.style.color = "darkred"
+        
+        document.querySelector("img")
+        .setAttribute("alt", "java alt tag");
+
+        document.querySelector('h1')
+        .textContent = "New title";
+
+        let headingText = document.querySelector('h1')
+        .textContent;
+        console.log(headingText);
+
     </script>
 </head>
 <body>
-    
+    <h1 id="head1">this is a heading</h1>
+    <p>this is a paragraph</p>
+    <p class="type1">this is a paragraph with class .type1</p>
+    <p id="type2">this is a paragraph with id #type2</p>
+    <img src="noimage.png" alt="java not working">
 </body>
 </html>

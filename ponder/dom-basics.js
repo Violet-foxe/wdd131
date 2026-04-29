@@ -34,3 +34,20 @@ firstList.className = "new-list";
 // to change all, you'd have to loop through it
 document.querySelectorAll("ul")[1]
         .style.backgroundColor = "pink";
+
+const html = document.querySelector("#html")
+const css = document.querySelector("#css")
+const js = document.querySelector("#js")
+// drop down
+const dropdown = document.querySelector("#webdevlist");
+
+dropdown.addEventListener("change", function(){//listen for something to happen to the element
+        html.style.color = "darkslategray";
+        css.style.color = "darkslategray";
+        js.style.color = "darkslategray";
+        
+        let codeValue = dropdown.value;
+        console.log(codeValue);
+        document.getElementById(codeValue)
+        .style.color = "darkred";
+}); 
