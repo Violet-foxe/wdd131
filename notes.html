@@ -61,9 +61,33 @@
         document.querySelector('h1')
         .textContent = "New title";
 
+        // to change all, you'd have to loop through it
+        document.querySelectorAll("p")[1]
+        .style.backgroundColor = "pink";
+
         let headingText = document.querySelector('h1')
         .textContent;
         console.log(headingText);
+
+        console.log(document);
+        let firstList = document.querySelector(".list"); 
+        //query selector can select anything, 
+        // but only returns one element (the first)
+        firstList.style.backgroundColor = "cornsilk";
+
+        let content = document.getElementById("content");
+        content.style.color = "darkslategray";
+
+        // document.querySelector("img")
+        //         .setAttribute("src", "portrait.png");
+        document.querySelector("img")
+                .setAttribute("alt", "new alt tag, life");
+
+        document.querySelector('h1')
+                .textContent = "NEW TITLE :)";
+
+        // make suer to not put ".something", just put "something"
+        firstList.className = "new-list";
 
         //functions
         function changeTheme() {
@@ -102,5 +126,10 @@
     <p class="type1">this is a paragraph with class .type1</p>
     <p id="type2">this is a paragraph with id #type2</p>
     <img src="noimage.png" alt="java not working">
+    <ul class="list">
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+    </ul>
 </body>
 </html>
