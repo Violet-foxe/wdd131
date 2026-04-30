@@ -25,7 +25,7 @@ document.querySelector('h1')
         .textContent = "NEW TITLE :)";
 
 let headingText = document.querySelector('h1')
-        .textContent;
+    .textContent;
 console.log(headingText);
 
 // make suer to not put ".something", just put "something"
@@ -42,12 +42,12 @@ const js = document.querySelector("#js")
 const dropdown = document.querySelector("#webdevlist");
 
 dropdown.addEventListener("change", function(){//listen for something to happen to the element
-        html.style.color = "darkslategray";
-        css.style.color = "darkslategray";
-        js.style.color = "darkslategray";
-        
-        let codeValue = dropdown.value;
-        console.log(codeValue);
-        document.getElementById(codeValue)
-        .style.color = "darkred";
+    html.style.color = "darkslategray";
+    css.style.color = "darkslategray";
+    js.style.color = "darkslategray";
+    
+    let codeValue = dropdown.value;
+    console.log(codeValue);
+    document.getElementById(codeValue)
+            .style.color = "darkred";
 }); 

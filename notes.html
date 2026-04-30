@@ -21,9 +21,10 @@
         // case to show its a constant
         // constants don't change, and won't let you change.
         const NAME_OF_SCHOOL = "BYUI";
-        NAME_OF_SCHOOL = "new name";
+        // NAME_OF_SCHOOL = "new name";
 
         // this works like print in python
+        let age = 20;
         console.log(age);
 
         // if statements need {} after instead of tabs
@@ -44,7 +45,7 @@
         // query selector stuff
 
         //find things with a class name
-        let type1 = document.querySelector(".list"); // use ".thing" with query selectors
+        let type1 = document.querySelector(".type1"); // use ".thing" with query selectors
         type1.style.backgroundColor = "cornsilk";
         
         //find things with an id name (can you do this with a query selector instead?)
@@ -64,6 +65,35 @@
         .textContent;
         console.log(headingText);
 
+        //functions
+        function changeTheme() {
+            //code
+        }
+
+        if (somethingHappens) {
+            changeTheme();
+        }
+
+        //event listener
+        let selectElem = document.querySelector("#theme-select");
+        //event to listen for a function name, don't add the () after the functions
+        selectElem.addEventListener("change", changeTheme)
+
+
+        //conditionals
+        // = makes a variable
+        // == checks values for numbers
+        // === checks values for strings
+        if (current === "ocean"){
+            //do something
+            console.log("hello");
+        } else if (current === "forest"){
+            //do something else
+        } else {
+            //if no matches, do something as default
+        }
+
+        //
     </script>
 </head>
 <body>
