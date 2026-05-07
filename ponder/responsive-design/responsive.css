@@ -46,7 +46,7 @@ nav a:hover {
 footer {
     text-align: center;
 }
-@media screen and (min-width: 650px) and (max-width: 999px){
+@media screen and (min-width: 700px) and (max-width: 999px){
     main {
         display: grid;
         grid-template-columns: 1fr 1fr;
