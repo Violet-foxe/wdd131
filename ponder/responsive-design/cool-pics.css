@@ -1,6 +1,6 @@
 * {
     font-family: Arial, Helvetica, sans-serif;
-    overflow: hidden;
+    overflow-x: hidden;
     margin: 0;
 }
 
@@ -50,7 +50,7 @@ main {
     text-align: center;
     padding: 10px;
 }
-img {
+div img {
     justify-self: center;
     object-fit: cover;
     width: 80%;
@@ -61,7 +61,26 @@ img {
     margin: 20px;
 }
 
-@media screen and (min-width: 700px) and (max-width: 999px) {
+/* modal stuff */
+dialog img {
+    width: 90%;
+    display: block;
+    margin: 20vh auto;
+}
+dialog {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.75);
+}
+.close-viewer { /* the x button */
+    position: absolute;
+    top: 5vh;
+    right: 5vh;
+    padding: 3px 6px;
+    font-size: 1.5em;
+}
+
+@media screen and (min-width: 700px){
     #grid{
         grid-template-columns: 1fr 1fr;
     }
@@ -77,5 +96,20 @@ img {
     }
     #menu {
         display: none;
+    }
+    dialog img {
+        width: 60%;
+        margin: 15vh auto;
+    }
+    .close-viewer {
+        position: absolute;
+        right: 15vh;
+    }
+    .viewer {
+        margin: 50px;
+        padding: 50px;
+    }
+    .viewer img {
+        max-width: 800px;
     }
 }
