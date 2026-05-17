@@ -10,10 +10,12 @@ function openModal(e) {
     // console.log("openModal running");
     // looks for the image target
     let imgSrc = e.target.src;
+    let imgAlt = e.target.alt;
     // console.log(imgSrc);
     if (imgSrc != null){       
         // change the src in the img src
         modalImg.src = imgSrc.replace("-sm.", "-full.");
+        modalImg.alt = imgAlt.replace("small", "full");
         // showModal function is built in
         modal.showModal();
         return
