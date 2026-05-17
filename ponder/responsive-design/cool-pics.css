@@ -20,12 +20,14 @@ nav{
 nav li{
     padding: 10px;
     text-decoration: none;
-    font-size: 1.2em;
-    display: inline;
+    font-size: 1em;
+    display: block;
+    text-decoration: underline;
 }
 nav ul {
     margin: 10px;
-    display: none;
+    padding: 0;
+    overflow-y: hidden;
 }
 #menu {
     /* padding: 10px; */
@@ -80,6 +82,11 @@ dialog {
     font-size: 1.5em;
 }
 
+/* menu button stuff */
+.hide {
+    display: none;
+}
+
 @media screen and (min-width: 700px){
     #grid{
         grid-template-columns: 1fr 1fr;
@@ -91,8 +98,15 @@ dialog {
         width: 70%;
     }
     nav ul {
-        display: inline-block;
+        /* display: inline-block; */
         margin: 10px;
+    }
+    nav li {
+        display: inline-block;
+    }
+    .hide {
+        display: inline-block;
+        overflow-y: hidden;
     }
     #menu {
         display: none;

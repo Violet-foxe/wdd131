@@ -35,3 +35,16 @@ function closeWithButton() {
     modal.close();
     // console.log("button close done");
 };
+
+let menuButton = document.querySelector(".menu-btn");
+let nav_ul = document.querySelector("ul");
+
+menuButton.addEventListener("click", changeMenu);
+
+function changeMenu(){
+    // hides the nav on or off
+    nav_ul.classList.toggle('hide');
+
+    // changes button look
+    // menuButton.classList.toggle('change');
+}
