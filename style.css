@@ -3,7 +3,7 @@
     padding: 0;
 }
 .pagelink {
-    background: seagreen;
+    background: #2e6d53;
     color: white;
     font-family: Arial;
     font-size: 1.2em;
@@ -18,7 +18,7 @@
 }
 .pagelink:hover {
     transition: .2s;
-    background: blueviolet;
+    background: #5d3d99;
     text-decoration: underline;
 }
 h2 {
