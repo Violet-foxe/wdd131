@@ -72,7 +72,7 @@ form.addEventListener("submit", function (event) {
         return;
     }
 
-    // checks if the date words
+    // checks if the date works
     if (isPastDate(availableDate)) {
         output.textContent = "Please choose a later date: one after today";
         return;
