@@ -90,7 +90,6 @@ form.addEventListener("submit", function (event) {
 
     // validate the input
     if (type === "student" && theID.length !== 9) {
-    console.log(theID.length);
         output.textContent = "Student ID must be 9 digits";
         return;
     }
