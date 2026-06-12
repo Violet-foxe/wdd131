@@ -21,7 +21,7 @@
     background: #5d3d99;
     text-decoration: underline;
 }
-h2 {
+h1 {
     font-family: Arial;
     text-align: center;
     width: 30%;
@@ -29,7 +29,7 @@ h2 {
     margin: 0 auto;
     margin-top: 30px;
 }
-h3 {
+h2 {
     font-family: Arial;
     text-align: center;
     width: 50%;

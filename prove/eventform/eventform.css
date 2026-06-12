@@ -8,8 +8,8 @@ body {
   max-width: 850px;
   margin: 50px;
   padding: 20px;
-  background: white;
   border-radius: 12px;
+  background: white;
 }
 form {
     display:grid;
@@ -39,11 +39,9 @@ button {
 button:hover {
   background: #E9F0FE;
 }
-
-#idContainer[hidden], #codeContainer[hidden] {
-  display: none;
+[hidden] {
+    display: none;
 }
-
 #output {
     margin-top: 15px;
 }
@@ -54,4 +52,3 @@ button:hover {
 #code {
     background: green;
 } */
-
