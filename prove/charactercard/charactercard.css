@@ -1,0 +1,86 @@
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    background: #f0f4f8;
+}
+.card {
+    background: #313131;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.9);
+    width: 400px;
+    margin: 100px auto;
+}
+
+/* info */
+.image {
+    width: 400px;
+    border-radius: 15px 15px 0 0;
+}
+.name {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: -4px 0 20px 0;
+    color: white;
+    padding: 15px 0 15px 35px;
+    background-color: #5d747b;
+}
+.stats {
+    margin: 10px 15px 7px 35px;
+    text-align: left;
+}
+.stats p {
+    margin: 5px 0;
+    color: #f0f4f8;
+}
+
+/* button stuff */
+.buttons {
+    text-align: center;
+}
+button {
+    padding: 8px 12px;
+    margin: 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #5d747b;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+button:hover {
+    background-color: #58605a;
+}
+
+/* pop up window */
+dialog {
+    border: none;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 0 auto;
+    width: 300px;
+    max-width: 90%;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+dialog h1 {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* behind the popup */
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(2px);
+}
+
+/* close Button styling */
+.close-btn {
+    background-color: #385D96;
+    color: white;
+    margin: 0 0 10px 230px;
+    border-radius: 15px;
+    padding-inline: 20px;
+}
+.close-btn:hover {
+    background-color: #4C6C9B;
+}

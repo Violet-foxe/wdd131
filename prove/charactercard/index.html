@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kaleiss Brugger">
+    <meta name="description" content="create a character card and game">
+
+    <!-- Open Graph (Facebook, LinkedIn, etc.) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Character Card">
+    <meta property="og:description" content="Character card and game">
+    <meta property="og:url" content="https://violet-foxe.github.io/wdd131/prove/charactercard/index.html">
+    <meta property="og:image" content="snortleblatpage.png">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="snortleblatpage.png">
+    <meta name="twitter:title" content="Character Card">
+    <meta name="twitter:description" content="Character card and game">
+    <meta name="twitter:image" content="snortleblatpage.png">
+    <!-- One favicon (ICO works everywhere) -->
+    <link rel="icon" href="snortlefavicon.png">
+    <!-- One Apple Touch Icon (iOS home screen) -->
+    <link rel="apple-touch-icon" href="snortleapp.png">
+
+    <title>Character Card</title>
+    <link rel="stylesheet" href="charactercard.css">
+    <script src="charactercard.js" defer></script>
+</head>
+
+<body>
+    <dialog id="deathPopup">
+        <h1>This page says</h1>
+        <p>Character Died</p>
+        <button class="close-btn" id="closePopup">OK</button>
+    </dialog>
+
+    <div class="card">
+        <div class="cardInfo">
+            <img class="image" src="snortleblat.png" alt="crocodilian-like lizard folk in a swamp">
+            <p class="name">Snortleblat</p>
+            <div class="stats">
+                <p><b>Class:</b> Swamp Beast Diplomat</p>
+                <p><b>Level:</b> 5</p>
+                <p><b>Health:</b> 100</p>
+            </div>
+        </div>
+        <div class="buttons">
+            <button id="attackButton">Attacked</button>
+            <button id="levelButton">Level Up</button>
+            <button id="healButton">Heal</button>
+        </div>
+    </div>
+
+</body>
+
+</html>
