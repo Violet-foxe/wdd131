@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+/* "Amatic SC" weight 400 or 700*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    padding: 20px;
+}
+
+/* header */
+#title-container {
+    display: flex;
+    justify-content: center;
+}
+#title-container img {
+    height: 120px;
+}
+#title-container h1 {
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 700;
+    font-size: 80px;
+    align-self: end;
+}
+
+/* searchbar */
+#search-bar-container {
+
+    display: flex;
+    align-items: center;
+    justify-self: center;
+
+    width: 90%;
+    height: 50px;
+    padding: 0px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-block: 20px;
+
+    overflow: hidden;
+}
+#search-bar-container img {
+    display: flex;
+    height: 90%;
+    padding: 4px;
+    border-left: 2px solid gray;
+    justify-self: right;
+}
+#search-bar-container input {
+    border: 0;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    font-size: 15px;
+}
+hr {
+    width: 90%;
+    margin: auto;
+    background: gray;
+    height: 1px;
+}
+
+.recipe {
+
+    display: flex;
+    flex-wrap: wrap;
+
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+
+    gap: 20px;
+}
+.recipe img {
+    width: 100%;
+    max-width: 500px;
+    transition: all .2s;
+}
+.recipe .type {
+    background: rgb(234, 234, 234);
+    padding: 5px;
+    border: 2px solid lightgray;
+    display:inline-block;
+    border-radius: 4px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.recipe h2 {
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    /* color: deepskyblue; */
+    color: dodgerblue;
+}
+.recipe .rating {
+    font-size: 1.2em;
+}
+.recipe .desc {
+    display: none;
+}
+
+/* footer */
+.social {
+    display: flex;
+    justify-content: center;
+    /* gap: 10px; */
+}
+.social a img {
+    height: 50px;
+}
+footer {
+    text-align: center;
+    padding: 0px;
+}
+footer a {
+    padding: 10px
+}
+
+@media screen and (min-width: 600px){
+.recipe {
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.recipe .desc {
+    display: flex;
+    margin-top: 20px;
+}
+.recipe img {
+    width: 50%;
+}
+}
