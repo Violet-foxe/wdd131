@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+#search-container {
+    display: flex;
+    margin: 20px;
+    background: lightgray;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 5px 8px #000000;
+    align-items: center;
+}
+#search-container label{
+    padding-right: 10px;
+}
+#search-container input {
+    border: 0px;
+    padding: 5px;
+    border-radius: 10px;
+    width: 100%;
+}
+#search-container button{
+    margin: 5px;
+    padding: 5px;
+    margin-left: 10px;
+    border: 0px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.75);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+
+    transition: all .1s;
+}
+#search-container button:hover {
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.65);
+    transform: translateY(-5px);
+}
+
+.hike-card {
+    /* border: 2px solid black; */
+    margin: 10px;
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 0 5px 8px #000000;
+}
+.hike-content h2{
+    padding: 10px;
+    padding-inline: 20px;
+    margin: 10px;
+    margin-left: 20px;
+    display: inline-block;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.75);
+}
+.hike-content p {
+    padding: 10px;
+    margin: 10px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.75);
+}
+.hike-card img {
+    border-radius: 10px;
+    width: 100%;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.75);
+    color: white;
+    text-shadow: 0 1px 3px black;
+}
+
+.hike-tags {
+    margin-inline: 20px;
+}
+.hike-tags button {
+    background: rgba(255, 255, 255, 0.75);
+    font-weight: bold;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    border: 0px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    
+    transition: all .1s;
+}
+.hike-tags button:hover {
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.65);
+    transform: translateY(-5px);
+}
+
+.gray {
+    background: #a9a9a9;
+    /* background: #90786cdd; */
+}
+.blue {
+    background: #2b69a0dd;
+}
+.green {
+    background: #307c10dd;
+}
+.yellow {
+    background: #efb236dd;
+}
+.orange {
+    background: #d46722dd;
+}
+.red {
+    background: #ae2a1edd;
+}
+.purple {
+    background: #5c1980dd;
+}

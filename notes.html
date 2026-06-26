@@ -120,6 +120,45 @@
             //if no matches, do something as default
         }
 
+        const names = ["James", "bob", "JOSH"];
+        names.sort();
+        console.log(names);
+
+        const ages = [33, 12, 7, 100];
+        ages.sort();
+        console.log(ages);
+
+        const people = [
+            { name: "James", age: 33 },
+            { name: "bob", age: 17 },
+            { name: "JOSH", age: 7 },
+            { name: "Mary", age: 100 }];
+        people.sort(sortByName);
+        console.log(people);
+
+        function sortByName(a, b) {
+            console.log(a.name + b.name);
+            if (a.name.toLowerCase() < b.name.toLowerCase()) {
+                return -1;
+            }
+            else if (a.name.toLowerCase() > b.name.toLowerCase()) {
+                return 1;
+            }
+            else {
+                return 0;
+            }
+        }
+        function sortByAge(a, b) {
+            if (a.age < b.age) {
+                return -1;
+            }
+            else if (a.age > b.age) {
+                return 1;
+            }
+            else {
+                return 0;
+            }
+        }
         //
     </script>
 </head>
@@ -152,21 +191,21 @@
     <link rel="stylesheet" href="[].css">
     <script src="[].js" defer></script> -->
 
-    <!-- Open Graph (Facebook, LinkedIn, etc.) -->
-    <!-- <meta property="og:type" content="website">
+<!-- Open Graph (Facebook, LinkedIn, etc.) -->
+<!-- <meta property="og:type" content="website">
     <meta property="og:title" content="[Put Page Title Here]">
     <meta property="og:description" content="[Put Page Description Here]">
     <meta property="og:url" content="[https://yourURLofPage.here]">
     <meta property="og:image" content="[/yourURLofSocialPreviewImageHere.png 1200x630px]"> -->
-    <!-- Twitter Card -->
-    <!-- <meta name="twitter:card" content="[/yourURLofSocialPreviewImageHere.png 1200x630px]">
+<!-- Twitter Card -->
+<!-- <meta name="twitter:card" content="[/yourURLofSocialPreviewImageHere.png 1200x630px]">
     <meta name="twitter:title" content="[Put Page Title Here]">
     <meta name="twitter:description" content="[Put Page Description Here]">
     <meta name="twitter:image" content="[/yourURLofSocialPreviewImageHere.png 1200x630px]"> -->
-    <!-- One favicon (ICO works everywhere) -->
-    <!-- <link rel="icon" href="[/favicon.ico16x or 32x or 64x]"> -->
-    <!-- One Apple Touch Icon (iOS home screen) -->
-    <!-- <link rel="apple-touch-icon" href="[/images/apple-touch-icon.png 180x180px]"> -->
+<!-- One favicon (ICO works everywhere) -->
+<!-- <link rel="icon" href="[/favicon.ico16x or 32x or 64x]"> -->
+<!-- One Apple Touch Icon (iOS home screen) -->
+<!-- <link rel="apple-touch-icon" href="[/images/apple-touch-icon.png 180x180px]"> -->
 
 <!-- </head>
 <body>
