@@ -48,7 +48,7 @@ body {
     border: 0px;
     border-left: 2px solid gray;
     justify-self: right;
-    background: white;
+    background: red;
 }
 #search-button img:hover {
     filter: drop-shadow( 0 2px 2px gray);
