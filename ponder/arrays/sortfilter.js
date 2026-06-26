@@ -211,7 +211,7 @@ function makeTags(tagList) {
   let allTags = "";
   tagList.forEach(tag => {
     allTags += `<button>${tag}</button>`
-  })
+  });
   return allTags;
 }
 function showDifficulty(rating, outof, symbol, empty) {
@@ -282,7 +282,7 @@ function Search() {
       hike.description.toLowerCase().includes(searchString) ||
       hike.directions.toLowerCase().includes(searchString) ||
       hike.distance.toLowerCase().includes(searchString) ||
-      hike.tags.find(tag => tag.toLowerCase().includes(searchString.toLowerCase())));
+      hike.tags.find(tag => tag.toLowerCase().includes(searchString)));
   })
   filteredHikes.sort(sortDifficulty);
   // console.log(filteredHikes);

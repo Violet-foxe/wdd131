@@ -41,19 +41,26 @@ body {
 
     overflow: hidden;
 }
-#search-bar-container img {
+#search-button {
     display: flex;
     height: 90%;
     padding: 4px;
+    border: 0px;
     border-left: 2px solid gray;
     justify-self: right;
+    background: white;
 }
-#search-bar-container input {
-    border: 0;
+#search-button img:hover {
+    filter: drop-shadow( 0 2px 2px gray);
+    transform: translateY(-2px);
+    transition: all .2s;
+}
+#search-bar {
+    border: 0px;
     padding: 10px;
     width: 100%;
     height: 100%;
-    border-radius: 10px;
+    border-radius: 0px;
     font-size: 15px;
 }
 hr {
@@ -64,9 +71,9 @@ hr {
 }
 
 .recipe {
-
     display: flex;
     flex-wrap: wrap;
+    align-items: flex-start;
 
     margin: 20px;
     padding: 20px;
@@ -78,9 +85,11 @@ hr {
 .recipe img {
     width: 100%;
     max-width: 500px;
+    flex-shrink: 0;
     transition: all .2s;
+        align-items: flex-start;
 }
-.recipe .type {
+.recipe .tag {
     background: rgb(234, 234, 234);
     padding: 5px;
     border: 2px solid lightgray;
@@ -89,6 +98,9 @@ hr {
     font-size: 1.2em;
     font-weight: bold;
 }
+/* .recipe .tag:hover {
+    background: lightgray;
+} */
 .recipe h2 {
     font-family: "Amatic SC", sans-serif;
     font-weight: 700;
@@ -97,7 +109,12 @@ hr {
     color: dodgerblue;
 }
 .recipe .rating {
-    font-size: 1.2em;
+    display: flex;
+    font-size: 1.4em;
+    align-items: center;
+}
+.icon-star-empty {
+    font-size: 1.5em;
 }
 .recipe .desc {
     display: none;
@@ -121,15 +138,16 @@ footer a {
 }
 
 @media screen and (min-width: 600px){
-.recipe {
-    flex-direction: row;
-    flex-wrap: nowrap;
-}
-.recipe .desc {
-    display: flex;
-    margin-top: 20px;
-}
-.recipe img {
-    width: 50%;
-}
+    .recipe {
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    .recipe .desc {
+        display: flex;
+        margin-top: 20px;
+    }
+    .recipe img {
+        width: 50%;
+        align-items: flex-start;
+    }
 }
